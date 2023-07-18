@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div>
+                <div class="form-group">
+                    <label for=""class="form-label" style="color: white;">Id</label>
+                    <input type="text" class="form-control"[(ngModel)]="prodId">
+                </div><br>
+                <div class="form-group">
+                    <label for=""class="form-label" style="color: white;">Moviename</label>
+                    <input type="text" class="form-control"[(ngModel)]="prodname">
+                </div><br>
+                <div class="form-group">
+                    <label for=""class="form-label" style="color: white;" >Movieimage</label>
+                    <input type="text" class="form-control"[(ngModel)]="prodimage">
+                </div><br>
+                <div class="form-group">
+                    <label for=""class="form-label" style="color: white;">About movie</label>
+                    <input type="text" class="form-control"[(ngModel)]="proddesc">
+                </div><br>
+                <div class="form-group">
+                    <label for=""class="form-label" style="color: white;" >Ticketprice</label>
+                    <input type="text" class="form-control"[(ngModel)]="prodprice">
+                </div><br>
+                <button class="btn btn-warning"(click)="addproduct()">addmovie</button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-danger">cancel</button>
+
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <br><br><br><br><br>
+</div>

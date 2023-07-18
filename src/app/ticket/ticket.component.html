@@ -1,0 +1,38 @@
+
+<div>
+
+    <div class="row">
+        <ng-container *ngFor="let product of products">
+            <div class="col-md-4" >
+                <div class="card">
+                    <div class="card-header">
+                        
+                        
+                            {{product.productName}}
+               
+                    </div>
+                    <div class="card-body">
+                        <img [src]="product.productImage" height="250px;" style="margin-left:100px;">
+                    </div>
+                    <div class="card-footer" >
+                       
+                            <div class="alert alert-success">
+                                {{product.productPrice }}
+                            </div>   
+                            </div>              
+              
+                
+                   </div>  
+    </div><br><br><br>
+    
+    
+    
+  
+        </ng-container>
+        
+    </div>
+</div>
+<br>
+
+
+<div> <button class="btn btn-primary" (click)="check()">checkout</button></div>        

@@ -1,0 +1,107 @@
+<div>
+    <div class="row">
+        <ng-container *ngFor="let product of products">
+            <div class="col-md-4" >
+                <div class="card">
+                    <div class="card-header">
+                        <div  *ngIf="product.isEdit">
+                            <input type="text" [(ngModel)]="product.productName" >
+                        </div>
+                        <div *ngIf="!product.isEdit">
+                            {{product.productName}}
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img [src]="product.productImage" height="250px;" style="margin-left:100px;">
+                    </div>
+                    <div class="card-footer" >
+                        <div *ngIf="product.isEdit">
+                            <input type="text"[(ngModel)]="product.productPrice">
+                        </div>
+                        <div *ngIf="!product.isEdit">
+                            <div class="alert alert-success">
+                                {{product.productPrice }}
+                            </div>   
+                            </div>
+                            <div *ngIf="!product.isEdit">
+                                <div class="alert alert-success">
+                                    {{product.productDesc }}
+                                </div>   
+                                </div>                            
+                <div *ngIf="product.isEdit">
+                    <button class="btn btn-link" (click)="update(product)"><i class="fa fa-check"></i>update</button>
+                </div>
+                <div *ngIf="!product.isEdit">
+                    <button class="btn bn-link" (click)="edit(product)"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="btn btn-link" (click)="delete(product)"><i class="fa-solid fa-trash"></i></button>
+                    <button class="btn btn-link" (click)="ticket(product)"><i class="fa-solid fa-shopping-cart"></i></button>
+                        
+                </div>
+                   </div>  
+    </div><br><br><br>
+    
+    
+    
+    </div>
+        </ng-container>
+        
+    </div>
+</div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"><br>  
+                    <h5 style="color:black">BOOK THE TICKETS</h5>
+                    <a href="https://www.bookmyshow.com">Grab Them</a><br>
+                    <a href="https://www.bookmyshow.com">Exclusive</a>
+                </div>
+                <div class="col-md-3"><br>
+                    <h5 style="color:black">Customer Care</h5>
+                    <a href="https://www.bookmyshow.com">Help</a><br>
+                    <a href="https://www.bookmyshow.com">Contact Us</a><br>
+                    <a href="https://www.bookmyshow.com">Track Your Tickets</a>
+                </div>
+                <div class="col-md-3"><br>
+                    <h5 style="color:black">Corporate</h5>
+                    <a href="https://www.bookmyshow.com">Careers</a><br>
+                    <a href="https://www.bookmyshow.com">Contact</a><br>
+                    <a href="https://www.bookmyshow.com">Website</a><br>
+                </div>
+                <div class="col-md-3"><br>
+                    <h5 style="color:black">Legal</h5>
+                    <a href="https://www.bookmyshow.com">Terms & Conditions</a><br>
+                    <a href="https://www.bookmyshow.com">Privacy & Cookies</a><br>
+                    <a href="https://www.bookmyshow.com">Accessibility</a><br>
+                    <a href="https://www.bookmyshow.com">Map</a><br>
+                </div>
+            </div>
+        </div><br><br>
+        <ul>
+            <p class="color" style="margin-left:15px;">join the conversion</p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" style="font-size:30px"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" style="margin-left:25px"><i class="fa-brands fa-youtube" style="font-size:30px"></i></a>
+            <a href="https://twitter.com/home" target="_blank" style="margin-left:25px"><i class="fa fa-twitter" style="font-size:30px"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" style="margin-left:25px"><i class="fa-brands fa-instagram" style="font-size:30px"></i></a>
+               
+        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p style="color:black">visit our corporate website at www.movies.com</p>
+                    <p style="color:black">copyright &copy; 2023 All rights reserved.</p>
+    
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p class="p1"style="margin-left:100px">we accepted the all payments</p>
+                    <img src="https://i8.amplience.net/i/jpl/desktop-example-f65e9d9f643754bb2bd76f3f4e8b0366?qlt=80" alt="" height=20 style="margin-top:1px;">
+                </div>
+            </div>
+        </div>
+     </footer>
+
+
+
+            
+        

@@ -1,0 +1,14 @@
+nav{
+    background-color: gold;
+    width: 1440px;
+    margin-left: -115px;
+    
+}
+li{
+    display:inline;
+    padding: 10px;
+}
+body
+{
+    overflow-x: hidden;
+}
